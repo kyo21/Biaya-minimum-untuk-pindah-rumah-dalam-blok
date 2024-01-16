@@ -18,6 +18,10 @@ void blok_biaya_terendah(map<int,int> blok){
         int targetBlock = entry.second;
         int currentCost = 0;
 
+        for (const auto& house : blok) {
+            int distance = abs(house.second - targetBlock);
+            currentCost += cost[distance];
+        }
 }
 
 int main(){
