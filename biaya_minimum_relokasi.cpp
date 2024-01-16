@@ -11,7 +11,12 @@ map<int, int> blok;
 
 void blok_biaya_terendah(map<int,int> blok){
 //CODE
+    int minCost = 1000;
+    int minBlock = -1;
 
+    for (const auto& entry : blok) {
+        int targetBlock = entry.second;
+        int currentCost = 0;
 
 }
 
